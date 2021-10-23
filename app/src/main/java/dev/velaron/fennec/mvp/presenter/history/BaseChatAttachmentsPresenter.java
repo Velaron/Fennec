@@ -11,7 +11,7 @@ import androidx.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 
-import biz.dealnote.mvp.reflect.OnGuiCreated;
+import dev.velaron.fennec.mvp.reflect.OnGuiCreated;
 import dev.velaron.fennec.mvp.presenter.base.PlaceSupportPresenter;
 import dev.velaron.fennec.mvp.view.IBaseChatAttachmentsView;
 import dev.velaron.fennec.util.DisposableHolder;

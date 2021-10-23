@@ -34,7 +34,7 @@ import dev.velaron.fennec.view.steppers.impl.CreatePhotoAlbumStep2Holder;
 import dev.velaron.fennec.view.steppers.impl.CreatePhotoAlbumStep3Holder;
 import dev.velaron.fennec.view.steppers.impl.CreatePhotoAlbumStep4Holder;
 import dev.velaron.fennec.view.steppers.impl.CreatePhotoAlbumStepsHost;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 public class CreatePhotoAlbumFragment extends BaseMvpFragment<EditPhotoAlbumPresenter, IEditPhotoAlbumView>
         implements BackPressCallback, BaseHolderListener, IEditPhotoAlbumView, CreatePhotoAlbumStep4Holder.ActionListener, CreatePhotoAlbumStep3Holder.ActionListener, CreatePhotoAlbumStep2Holder.ActionListener, CreatePhotoAlbumStep1Holder.ActionListener {

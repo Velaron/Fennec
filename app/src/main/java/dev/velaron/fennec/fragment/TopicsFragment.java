@@ -33,7 +33,7 @@ import dev.velaron.fennec.mvp.view.ITopicsView;
 import dev.velaron.fennec.place.PlaceFactory;
 import dev.velaron.fennec.util.ViewUtils;
 import dev.velaron.fennec.view.LoadMoreFooterHelper;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 import static dev.velaron.fennec.util.Objects.nonNull;
 

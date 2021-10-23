@@ -21,7 +21,7 @@ import dev.velaron.fennec.mvp.presenter.CreatePinPresenter;
 import dev.velaron.fennec.mvp.view.ICreatePinView;
 import dev.velaron.fennec.util.Objects;
 import dev.velaron.fennec.view.KeyboardView;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 /**
  * Created by ruslan.kolbasa on 10-Jun-16.

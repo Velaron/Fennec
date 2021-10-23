@@ -39,7 +39,7 @@ import dev.velaron.fennec.place.PlaceFactory;
 import dev.velaron.fennec.settings.Settings;
 import dev.velaron.fennec.util.Utils;
 import dev.velaron.fennec.view.MySearchView;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 import static dev.velaron.fennec.util.Objects.nonNull;
 

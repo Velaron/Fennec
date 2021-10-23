@@ -32,7 +32,7 @@ import dev.velaron.fennec.mvp.view.IAudiosView;
 import dev.velaron.fennec.place.Place;
 import dev.velaron.fennec.place.PlaceFactory;
 import dev.velaron.fennec.settings.Settings;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 import static dev.velaron.fennec.util.Objects.nonNull;
 

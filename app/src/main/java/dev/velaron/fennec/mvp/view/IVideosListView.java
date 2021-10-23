@@ -4,7 +4,7 @@ import androidx.annotation.NonNull;
 
 import java.util.List;
 
-import biz.dealnote.mvp.core.IMvpView;
+import dev.velaron.fennec.mvp.core.IMvpView;
 import dev.velaron.fennec.model.Video;
 import dev.velaron.fennec.mvp.view.base.IAccountDependencyView;
 

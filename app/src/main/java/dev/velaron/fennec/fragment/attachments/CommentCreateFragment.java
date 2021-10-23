@@ -16,7 +16,7 @@ import dev.velaron.fennec.activity.ActivityUtils;
 import dev.velaron.fennec.listener.OnSectionResumeCallback;
 import dev.velaron.fennec.mvp.presenter.CommentCreatePresenter;
 import dev.velaron.fennec.mvp.view.ICreateCommentView;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 import static dev.velaron.fennec.util.Objects.nonNull;
 

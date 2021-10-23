@@ -36,7 +36,7 @@ import dev.velaron.fennec.util.RoundTransformation;
 import dev.velaron.fennec.util.Utils;
 import dev.velaron.fennec.util.ViewUtils;
 import dev.velaron.fennec.view.OnlineView;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 /**
  * Created by Ruslan Kolbasa on 21.06.2017.

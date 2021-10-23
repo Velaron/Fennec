@@ -17,7 +17,7 @@ import dev.velaron.fennec.model.TmpSource;
 import dev.velaron.fennec.mvp.presenter.history.ChatAttachmentPhotoPresenter;
 import dev.velaron.fennec.mvp.view.IChatAttachmentPhotosView;
 import dev.velaron.fennec.place.PlaceFactory;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 public class ConversationPhotosFragment extends AbsChatAttachmentsFragment<Photo, ChatAttachmentPhotoPresenter,
         IChatAttachmentPhotosView> implements FavePhotosAdapter.PhotoSelectionListener, IChatAttachmentPhotosView {

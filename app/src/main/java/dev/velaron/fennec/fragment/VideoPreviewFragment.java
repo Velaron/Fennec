@@ -54,7 +54,7 @@ import dev.velaron.fennec.settings.AppPrefs;
 import dev.velaron.fennec.util.Utils;
 import dev.velaron.fennec.util.YoutubeDeveloperKey;
 import dev.velaron.fennec.view.CircleCounterButton;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 import static dev.velaron.fennec.util.Objects.isNull;
 import static dev.velaron.fennec.util.Objects.nonNull;

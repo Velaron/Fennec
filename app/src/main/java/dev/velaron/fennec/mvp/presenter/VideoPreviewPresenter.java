@@ -9,7 +9,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import biz.dealnote.mvp.reflect.OnGuiCreated;
+import dev.velaron.fennec.mvp.reflect.OnGuiCreated;
 import dev.velaron.fennec.domain.IVideosInteractor;
 import dev.velaron.fennec.domain.InteractorFactory;
 import dev.velaron.fennec.model.Commented;

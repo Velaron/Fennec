@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import biz.dealnote.mvp.reflect.OnGuiCreated;
+import dev.velaron.fennec.mvp.reflect.OnGuiCreated;
 import dev.velaron.fennec.domain.IOwnersRepository;
 import dev.velaron.fennec.domain.IPhotosInteractor;
 import dev.velaron.fennec.domain.IUtilsInteractor;

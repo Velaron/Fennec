@@ -7,9 +7,9 @@ import dev.velaron.fennec.mvp.view.IErrorView;
 import dev.velaron.fennec.mvp.view.IToastView;
 import dev.velaron.fennec.mvp.view.base.IAccountDependencyView;
 import dev.velaron.fennec.util.Utils;
-import biz.dealnote.mvp.compat.AbsMvpDialogFragment;
-import biz.dealnote.mvp.core.AbsPresenter;
-import biz.dealnote.mvp.core.IMvpView;
+import dev.velaron.fennec.mvp.compat.AbsMvpDialogFragment;
+import dev.velaron.fennec.mvp.core.AbsPresenter;
+import dev.velaron.fennec.mvp.core.IMvpView;
 
 /**
  * Created by ruslan.kolbasa on 11.10.2016.

@@ -2,7 +2,7 @@ package dev.velaron.fennec.mvp.view.base;
 
 import androidx.annotation.NonNull;
 
-import biz.dealnote.mvp.core.IMvpView;
+import dev.velaron.fennec.mvp.core.IMvpView;
 import dev.velaron.fennec.view.steppers.base.AbsStepsHost;
 
 /**

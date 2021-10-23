@@ -8,7 +8,7 @@ import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 
-import biz.dealnote.mvp.reflect.OnGuiCreated;
+import dev.velaron.fennec.mvp.reflect.OnGuiCreated;
 import dev.velaron.fennec.Constants;
 import dev.velaron.fennec.Injection;
 import dev.velaron.fennec.api.ApiVersion;

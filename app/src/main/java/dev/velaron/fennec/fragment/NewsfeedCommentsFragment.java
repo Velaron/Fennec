@@ -31,7 +31,7 @@ import dev.velaron.fennec.mvp.view.INewsfeedCommentsView;
 import dev.velaron.fennec.place.Place;
 import dev.velaron.fennec.settings.Settings;
 import dev.velaron.fennec.util.Utils;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 import static dev.velaron.fennec.util.Objects.nonNull;
 import static dev.velaron.fennec.util.Utils.isLandscape;

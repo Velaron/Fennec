@@ -1,11 +1,11 @@
-package biz.dealnote.mvp.compat
+package dev.velaron.fennec.mvp.compat
 
 import android.content.Context
 import android.os.Bundle
-import biz.dealnote.mvp.core.IMvpView
-import biz.dealnote.mvp.core.IPresenter
-import biz.dealnote.mvp.core.IPresenterFactory
-import biz.dealnote.mvp.core.PresenterAction
+import dev.velaron.fennec.mvp.core.IMvpView
+import dev.velaron.fennec.mvp.core.IPresenter
+import dev.velaron.fennec.mvp.core.IPresenterFactory
+import dev.velaron.fennec.mvp.core.PresenterAction
 import java.lang.ref.WeakReference
 import java.util.*
 

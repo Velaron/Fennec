@@ -3,7 +3,7 @@ package dev.velaron.fennec.mvp.view.search;
 import java.util.ArrayList;
 import java.util.List;
 
-import biz.dealnote.mvp.core.IMvpView;
+import dev.velaron.fennec.mvp.core.IMvpView;
 import dev.velaron.fennec.fragment.search.options.BaseOption;
 import dev.velaron.fennec.mvp.view.IAttachmentsPlacesView;
 import dev.velaron.fennec.mvp.view.IErrorView;

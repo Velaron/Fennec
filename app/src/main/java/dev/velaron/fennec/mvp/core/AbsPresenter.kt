@@ -1,8 +1,8 @@
-package biz.dealnote.mvp.core
+package dev.velaron.fennec.mvp.core
 
 import android.os.Bundle
 import androidx.annotation.CallSuper
-import biz.dealnote.mvp.reflect.AnnotatedHandlerFinder
+import dev.velaron.fennec.mvp.reflect.AnnotatedHandlerFinder
 import java.lang.ref.WeakReference
 import java.lang.reflect.InvocationTargetException
 import java.util.concurrent.atomic.AtomicInteger

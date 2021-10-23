@@ -1,4 +1,4 @@
-package biz.dealnote.mvp.core
+package dev.velaron.fennec.mvp.core
 
 /**
  * Created by admin on 11.07.2016.

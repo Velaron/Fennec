@@ -35,7 +35,7 @@ import dev.velaron.fennec.mvp.view.ILocalPhotosView;
 import dev.velaron.fennec.util.AssertUtils;
 import dev.velaron.fennec.util.Objects;
 import dev.velaron.fennec.util.ViewUtils;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 public class LocalPhotosFragment extends BaseMvpFragment<LocalPhotosPresenter, ILocalPhotosView>
         implements ILocalPhotosView, LocalPhotosAdapter.ClickListener, SwipeRefreshLayout.OnRefreshListener {

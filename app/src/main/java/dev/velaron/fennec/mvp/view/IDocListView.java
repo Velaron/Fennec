@@ -5,7 +5,7 @@ import androidx.annotation.NonNull;
 import java.util.ArrayList;
 import java.util.List;
 
-import biz.dealnote.mvp.core.IMvpView;
+import dev.velaron.fennec.mvp.core.IMvpView;
 import dev.velaron.fennec.model.DocFilter;
 import dev.velaron.fennec.model.Document;
 import dev.velaron.fennec.mvp.view.base.IAccountDependencyView;

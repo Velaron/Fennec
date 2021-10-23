@@ -13,7 +13,7 @@ import dev.velaron.fennec.adapter.AudioRecyclerAdapter;
 import dev.velaron.fennec.model.Audio;
 import dev.velaron.fennec.mvp.presenter.history.ChatAttachmentAudioPresenter;
 import dev.velaron.fennec.mvp.view.IChatAttachmentAudiosView;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 public class ConversationAudiosFragment extends AbsChatAttachmentsFragment<Audio, ChatAttachmentAudioPresenter, IChatAttachmentAudiosView>
         implements AudioRecyclerAdapter.ClickListener, IChatAttachmentAudiosView {

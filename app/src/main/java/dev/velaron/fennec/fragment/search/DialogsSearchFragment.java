@@ -12,7 +12,7 @@ import dev.velaron.fennec.adapter.DialogPreviewAdapter;
 import dev.velaron.fennec.fragment.search.criteria.DialogsSearchCriteria;
 import dev.velaron.fennec.mvp.presenter.search.DialogsSearchPresenter;
 import dev.velaron.fennec.mvp.view.search.IDialogsSearchView;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 /**
  * Created by admin on 02.05.2017.

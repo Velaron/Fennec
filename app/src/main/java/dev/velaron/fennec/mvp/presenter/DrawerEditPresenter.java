@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import biz.dealnote.mvp.core.AbsPresenter;
+import dev.velaron.fennec.mvp.core.AbsPresenter;
 import dev.velaron.fennec.R;
 import dev.velaron.fennec.model.DrawerCategory;
 import dev.velaron.fennec.model.SwitchableCategory;

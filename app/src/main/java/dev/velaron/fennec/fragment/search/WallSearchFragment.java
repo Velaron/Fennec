@@ -15,7 +15,7 @@ import dev.velaron.fennec.model.Post;
 import dev.velaron.fennec.mvp.presenter.search.WallSearchPresenter;
 import dev.velaron.fennec.mvp.view.search.IWallSearchView;
 import dev.velaron.fennec.util.Utils;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 /**
  * Created by admin on 02.05.2017.

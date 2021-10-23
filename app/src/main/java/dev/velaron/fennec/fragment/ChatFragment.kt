@@ -50,7 +50,7 @@ import dev.velaron.fennec.view.InputViewController
 import dev.velaron.fennec.view.LoadMoreFooterHelper
 import dev.velaron.fennec.view.emoji.EmojiconTextView
 import dev.velaron.fennec.view.emoji.StickersGridView
-import biz.dealnote.mvp.core.IPresenterFactory
+import dev.velaron.fennec.mvp.core.IPresenterFactory
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import java.lang.ref.WeakReference
 import java.util.*

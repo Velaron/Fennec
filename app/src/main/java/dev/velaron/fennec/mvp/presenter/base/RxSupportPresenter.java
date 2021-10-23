@@ -10,8 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 
-import biz.dealnote.mvp.core.AbsPresenter;
-import biz.dealnote.mvp.core.IMvpView;
+import dev.velaron.fennec.mvp.core.AbsPresenter;
+import dev.velaron.fennec.mvp.core.IMvpView;
 import dev.velaron.fennec.App;
 import dev.velaron.fennec.BuildConfig;
 import dev.velaron.fennec.Injection;

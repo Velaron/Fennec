@@ -30,7 +30,7 @@ import dev.velaron.fennec.model.VoiceMessage;
 import dev.velaron.fennec.mvp.presenter.FwdsPresenter;
 import dev.velaron.fennec.mvp.view.IFwdsView;
 import dev.velaron.fennec.util.Objects;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 import static dev.velaron.fennec.util.Objects.nonNull;
 

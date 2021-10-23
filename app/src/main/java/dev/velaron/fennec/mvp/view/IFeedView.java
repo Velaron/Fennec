@@ -4,7 +4,7 @@ import androidx.annotation.Nullable;
 
 import java.util.List;
 
-import biz.dealnote.mvp.core.IMvpView;
+import dev.velaron.fennec.mvp.core.IMvpView;
 import dev.velaron.fennec.model.FeedSource;
 import dev.velaron.fennec.model.LoadMoreState;
 import dev.velaron.fennec.model.News;

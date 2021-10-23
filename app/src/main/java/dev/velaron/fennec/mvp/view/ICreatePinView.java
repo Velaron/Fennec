@@ -2,7 +2,7 @@ package dev.velaron.fennec.mvp.view;
 
 import androidx.annotation.StringRes;
 
-import biz.dealnote.mvp.core.IMvpView;
+import dev.velaron.fennec.mvp.core.IMvpView;
 
 /**
  * Created by ruslan.kolbasa on 10-Jun-16.

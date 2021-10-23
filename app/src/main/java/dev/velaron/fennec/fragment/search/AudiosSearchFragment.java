@@ -16,7 +16,7 @@ import dev.velaron.fennec.model.Audio;
 import dev.velaron.fennec.mvp.presenter.search.AudiosSearchPresenter;
 import dev.velaron.fennec.mvp.view.search.IAudioSearchView;
 import dev.velaron.fennec.place.PlaceFactory;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 
 public class AudiosSearchFragment extends AbsSearchFragment<AudiosSearchPresenter, IAudioSearchView, Audio>

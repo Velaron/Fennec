@@ -22,7 +22,7 @@ import dev.velaron.fennec.model.WallEditorAttrs;
 import dev.velaron.fennec.mvp.presenter.PostCreatePresenter;
 import dev.velaron.fennec.mvp.view.IPostCreateView;
 import dev.velaron.fennec.util.AssertUtils;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 /**
  * Created by admin on 21.01.2017.

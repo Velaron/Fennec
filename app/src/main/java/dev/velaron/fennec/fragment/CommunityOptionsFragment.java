@@ -27,7 +27,7 @@ import dev.velaron.fennec.mvp.view.ICommunityOptionsView;
 import dev.velaron.fennec.util.Month;
 import dev.velaron.fennec.util.Objects;
 import dev.velaron.fennec.view.MySpinnerView;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 /**
  * Created by admin on 13.06.2017.

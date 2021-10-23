@@ -43,7 +43,7 @@ import dev.velaron.fennec.place.PlaceFactory;
 import dev.velaron.fennec.settings.Settings;
 import dev.velaron.fennec.util.Objects;
 import dev.velaron.fennec.util.ViewUtils;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 public class VKPhotoAlbumsFragment extends BaseMvpFragment<PhotoAlbumsPresenter, IPhotoAlbumsView> implements IPhotoAlbumsView,
         VkPhotoAlbumsAdapter.ClickListener, SwipeRefreshLayout.OnRefreshListener {

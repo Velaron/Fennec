@@ -19,7 +19,7 @@ import dev.velaron.fennec.model.Comment;
 import dev.velaron.fennec.mvp.presenter.CommentEditPresenter;
 import dev.velaron.fennec.mvp.view.ICommentEditView;
 import dev.velaron.fennec.util.AssertUtils;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 import static dev.velaron.fennec.util.Objects.nonNull;
 

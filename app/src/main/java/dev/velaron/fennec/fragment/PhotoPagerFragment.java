@@ -59,7 +59,7 @@ import dev.velaron.fennec.view.pager.AbsPagerAdapter;
 import dev.velaron.fennec.view.pager.CloseOnFlingListener;
 import dev.velaron.fennec.view.pager.GoBackCallback;
 import dev.velaron.fennec.view.pager.WeakGoBackAnimationAdapter;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 import static dev.velaron.fennec.util.Objects.nonNull;
 import static dev.velaron.fennec.util.Utils.nonEmpty;

@@ -23,7 +23,7 @@ import dev.velaron.fennec.model.ProxyConfig;
 import dev.velaron.fennec.mvp.presenter.ProxyManagerPresenter;
 import dev.velaron.fennec.mvp.view.IProxyManagerView;
 import dev.velaron.fennec.place.PlaceFactory;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 import static dev.velaron.fennec.util.Objects.nonNull;
 

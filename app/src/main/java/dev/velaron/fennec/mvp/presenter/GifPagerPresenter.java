@@ -11,7 +11,7 @@ import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 
-import biz.dealnote.mvp.reflect.OnGuiCreated;
+import dev.velaron.fennec.mvp.reflect.OnGuiCreated;
 import dev.velaron.fennec.App;
 import dev.velaron.fennec.Injection;
 import dev.velaron.fennec.R;

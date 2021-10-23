@@ -1,4 +1,4 @@
-package biz.dealnote.mvp.reflect
+package dev.velaron.fennec.mvp.reflect
 
 import java.lang.reflect.Method
 import java.util.*

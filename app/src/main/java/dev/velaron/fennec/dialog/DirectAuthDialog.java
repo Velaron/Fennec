@@ -25,7 +25,7 @@ import dev.velaron.fennec.listener.TextWatcherAdapter;
 import dev.velaron.fennec.mvp.presenter.DirectAuthPresenter;
 import dev.velaron.fennec.mvp.view.IDirectAuthView;
 import dev.velaron.fennec.util.Objects;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 /**
  * Created by admin on 16.07.2017.

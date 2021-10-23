@@ -1,6 +1,6 @@
 package dev.velaron.fennec.mvp.view;
 
-import biz.dealnote.mvp.core.IMvpView;
+import dev.velaron.fennec.mvp.core.IMvpView;
 
 /**
  * Created by admin on 16.07.2017.

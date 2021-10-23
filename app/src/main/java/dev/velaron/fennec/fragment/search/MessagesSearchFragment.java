@@ -15,7 +15,7 @@ import dev.velaron.fennec.model.Message;
 import dev.velaron.fennec.mvp.presenter.search.MessagesSearchPresenter;
 import dev.velaron.fennec.mvp.view.search.IMessagesSearchView;
 import dev.velaron.fennec.place.PlaceFactory;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 /**
  * Created by admin on 28.06.2016.

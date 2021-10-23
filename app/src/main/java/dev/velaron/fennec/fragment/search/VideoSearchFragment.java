@@ -14,7 +14,7 @@ import dev.velaron.fennec.fragment.search.criteria.VideoSearchCriteria;
 import dev.velaron.fennec.model.Video;
 import dev.velaron.fennec.mvp.presenter.search.VideosSearchPresenter;
 import dev.velaron.fennec.mvp.view.search.IVideosSearchView;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 public class VideoSearchFragment extends AbsSearchFragment<VideosSearchPresenter, IVideosSearchView, Video>
         implements VideosAdapter.VideoOnClickListener {

@@ -18,9 +18,9 @@ import dev.velaron.fennec.mvp.view.IToolbarView;
 import dev.velaron.fennec.mvp.view.base.IAccountDependencyView;
 import dev.velaron.fennec.util.Utils;
 import dev.velaron.fennec.util.ViewUtils;
-import biz.dealnote.mvp.compat.AbsMvpFragment;
-import biz.dealnote.mvp.core.AbsPresenter;
-import biz.dealnote.mvp.core.IMvpView;
+import dev.velaron.fennec.mvp.compat.AbsMvpFragment;
+import dev.velaron.fennec.mvp.core.AbsPresenter;
+import dev.velaron.fennec.mvp.core.IMvpView;
 
 import static dev.velaron.fennec.util.Objects.nonNull;
 

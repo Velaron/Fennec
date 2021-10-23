@@ -6,7 +6,7 @@ import androidx.annotation.CallSuper;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import biz.dealnote.mvp.core.IMvpView;
+import dev.velaron.fennec.mvp.core.IMvpView;
 import dev.velaron.fennec.Injection;
 import dev.velaron.fennec.mvp.view.base.IAccountDependencyView;
 import dev.velaron.fennec.settings.Settings;

@@ -34,7 +34,7 @@ import dev.velaron.fennec.mvp.presenter.UserDetailsPresenter;
 import dev.velaron.fennec.mvp.view.IUserDetailsView;
 import dev.velaron.fennec.place.PlaceFactory;
 import dev.velaron.fennec.util.Utils;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 import static dev.velaron.fennec.util.Objects.nonNull;
 

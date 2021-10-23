@@ -35,7 +35,7 @@ import dev.velaron.fennec.place.Place;
 import dev.velaron.fennec.place.PlaceFactory;
 import dev.velaron.fennec.util.AssertUtils;
 import dev.velaron.fennec.util.Objects;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 /**
  * Created by admin on 13.06.2017.

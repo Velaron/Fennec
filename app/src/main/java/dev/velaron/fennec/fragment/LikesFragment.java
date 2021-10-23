@@ -12,7 +12,7 @@ import dev.velaron.fennec.activity.ActivityFeatures;
 import dev.velaron.fennec.activity.ActivityUtils;
 import dev.velaron.fennec.mvp.presenter.LikesListPresenter;
 import dev.velaron.fennec.mvp.view.ISimpleOwnersView;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 public class LikesFragment extends AbsOwnersListFragment<LikesListPresenter, ISimpleOwnersView> {
 

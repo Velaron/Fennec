@@ -1,17 +1,17 @@
-package biz.dealnote.mvp.compat
+package dev.velaron.fennec.mvp.compat
 
 import android.os.Bundle
 import android.view.View
-
-import biz.dealnote.mvp.core.IMvpView
-import biz.dealnote.mvp.core.IPresenter
-import biz.dealnote.mvp.core.PresenterAction
+import androidx.loader.app.LoaderManager
+import dev.velaron.fennec.mvp.core.IMvpView
+import dev.velaron.fennec.mvp.core.IPresenter
+import dev.velaron.fennec.mvp.core.PresenterAction
 
 /**
  * Created by ruslan.kolbasa on 08.09.2016.
  * mvpcore
  */
-abstract class AbsMvpDialogFragment<P : IPresenter<V>, V : IMvpView> : androidx.fragment.app.DialogFragment(), ViewHostDelegate.IFactoryProvider<P, V> {
+abstract class AbsMvpFragment<P : IPresenter<V>, V : IMvpView> : androidx.fragment.app.Fragment(), ViewHostDelegate.IFactoryProvider<P, V> {
 
     private val delegate = ViewHostDelegate<P, V>()
 
@@ -23,7 +23,7 @@ abstract class AbsMvpDialogFragment<P : IPresenter<V>, V : IMvpView> : androidx.
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        delegate.onCreate(requireActivity(), getViewHost(), this, loaderManager, savedInstanceState)
+        delegate.onCreate(requireActivity(), getViewHost(), this, LoaderManager.getInstance(this), savedInstanceState)
     }
 
     // Override in case of fragment not implementing IPresenter<View> interface
@@ -31,10 +31,6 @@ abstract class AbsMvpDialogFragment<P : IPresenter<V>, V : IMvpView> : androidx.
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        delegate.onViewCreated()
-    }
-
-    protected fun fireViewCreated(){
         delegate.onViewCreated()
     }
 

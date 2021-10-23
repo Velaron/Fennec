@@ -10,7 +10,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.core.content.ContextCompat
-import biz.dealnote.mvp.reflect.OnGuiCreated
+import dev.velaron.fennec.mvp.reflect.OnGuiCreated
 import dev.velaron.fennec.*
 import dev.velaron.fennec.crypt.AesKeyPair
 import dev.velaron.fennec.crypt.KeyExchangeService

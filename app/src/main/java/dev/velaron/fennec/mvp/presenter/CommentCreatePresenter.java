@@ -13,7 +13,7 @@ import androidx.annotation.Nullable;
 
 import java.util.List;
 
-import biz.dealnote.mvp.reflect.OnGuiCreated;
+import dev.velaron.fennec.mvp.reflect.OnGuiCreated;
 import dev.velaron.fennec.Injection;
 import dev.velaron.fennec.db.AttachToType;
 import dev.velaron.fennec.domain.IAttachmentsRepository;

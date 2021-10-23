@@ -14,8 +14,8 @@ import dev.velaron.fennec.model.Post;
 import dev.velaron.fennec.mvp.presenter.RepostPresenter;
 import dev.velaron.fennec.mvp.view.IRepostView;
 import dev.velaron.fennec.place.Place;
-import biz.dealnote.mvp.core.IPresenterFactory;
-import biz.dealnote.mvp.reflect.OnGuiCreated;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.reflect.OnGuiCreated;
 
 public class RepostFragment extends AbsAttachmentsEditFragment<RepostPresenter, IRepostView> implements IRepostView {
 

@@ -14,7 +14,7 @@ import dev.velaron.fennec.adapter.DocsAdapter;
 import dev.velaron.fennec.model.Document;
 import dev.velaron.fennec.mvp.presenter.history.ChatAttachmentDocsPresenter;
 import dev.velaron.fennec.mvp.view.IChatAttachmentDocsView;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 public class ConversationDocsFragment extends AbsChatAttachmentsFragment<Document, ChatAttachmentDocsPresenter, IChatAttachmentDocsView>
         implements DocsAdapter.ActionListener, IChatAttachmentDocsView {

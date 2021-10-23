@@ -24,7 +24,7 @@ import dev.velaron.fennec.api.model.VKApiCommunity;
 import dev.velaron.fennec.fragment.base.BaseMvpFragment;
 import dev.velaron.fennec.mvp.presenter.CommunityLinksPresenter;
 import dev.velaron.fennec.mvp.view.ICommunityLinksView;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 import static dev.velaron.fennec.util.Objects.nonNull;
 

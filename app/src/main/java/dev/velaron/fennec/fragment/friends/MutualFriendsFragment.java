@@ -7,7 +7,7 @@ import dev.velaron.fennec.Extra;
 import dev.velaron.fennec.fragment.AbsOwnersListFragment;
 import dev.velaron.fennec.mvp.presenter.MutualFriendsPresenter;
 import dev.velaron.fennec.mvp.view.ISimpleOwnersView;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 public class MutualFriendsFragment extends AbsOwnersListFragment<MutualFriendsPresenter, ISimpleOwnersView> implements ISimpleOwnersView {
 

@@ -60,7 +60,7 @@
 
 # OnGuiCreated annotation based on Java Reflection Api
 -keepclassmembers class ** {
-  @biz.dealnote.mvp.reflect.OnGuiCreated *;
+  @dev.velaron.fennec.mvp.reflect.OnGuiCreated *;
 }
 
 

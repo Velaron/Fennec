@@ -12,7 +12,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import biz.dealnote.mvp.reflect.OnGuiCreated;
+import dev.velaron.fennec.mvp.reflect.OnGuiCreated;
 import dev.velaron.fennec.Injection;
 import dev.velaron.fennec.db.model.PostUpdate;
 import dev.velaron.fennec.domain.IOwnersRepository;

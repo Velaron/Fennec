@@ -27,7 +27,7 @@ import dev.velaron.fennec.mvp.view.IVideoAlbumsView;
 import dev.velaron.fennec.place.PlaceFactory;
 import dev.velaron.fennec.util.Objects;
 import dev.velaron.fennec.util.ViewUtils;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 public class VideoAlbumsFragment extends BaseMvpFragment<VideoAlbumsPresenter, IVideoAlbumsView>
         implements VideoAlbumsNewAdapter.Listener, IVideoAlbumsView {

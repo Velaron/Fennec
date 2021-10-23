@@ -35,7 +35,7 @@ import dev.velaron.fennec.view.CircleCounterButton;
 import dev.velaron.fennec.view.FlingRelativeLayout;
 import dev.velaron.fennec.view.pager.AbsPagerHolder;
 import dev.velaron.fennec.view.pager.CloseOnFlingListener;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 /**
  * Created by ruslan.kolbasa on 11.10.2016.

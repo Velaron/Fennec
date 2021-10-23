@@ -38,7 +38,7 @@ import dev.velaron.fennec.mvp.view.IMessagesLookView;
 import dev.velaron.fennec.util.Logger;
 import dev.velaron.fennec.util.Objects;
 import dev.velaron.fennec.view.LoadMoreFooterHelper;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 /**
  * Created by ruslan.kolbasa on 03.10.2016.

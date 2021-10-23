@@ -30,7 +30,7 @@ import dev.velaron.fennec.mvp.presenter.PollPresenter;
 import dev.velaron.fennec.mvp.view.IPollView;
 import dev.velaron.fennec.util.AssertUtils;
 import dev.velaron.fennec.view.ProgressButton;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 import static dev.velaron.fennec.util.Objects.nonNull;
 

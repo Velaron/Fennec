@@ -15,7 +15,7 @@ import dev.velaron.fennec.model.User;
 import dev.velaron.fennec.mvp.presenter.search.PeopleSearchPresenter;
 import dev.velaron.fennec.mvp.view.search.IPeopleSearchView;
 import dev.velaron.fennec.place.PlaceFactory;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 public class PeopleSearchFragment extends AbsSearchFragment<PeopleSearchPresenter, IPeopleSearchView, User>
         implements PeopleAdapter.ClickListener, IPeopleSearchView {

@@ -21,7 +21,7 @@ import dev.velaron.fennec.listener.OnSectionResumeCallback;
 import dev.velaron.fennec.listener.TextWatcherAdapter;
 import dev.velaron.fennec.mvp.presenter.RequestExecutePresenter;
 import dev.velaron.fennec.mvp.view.IRequestExecuteView;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 /**
  * Created by Ruslan Kolbasa on 05.07.2017.

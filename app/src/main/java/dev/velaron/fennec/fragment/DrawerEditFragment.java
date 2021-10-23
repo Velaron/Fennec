@@ -25,8 +25,8 @@ import dev.velaron.fennec.model.DrawerCategory;
 import dev.velaron.fennec.mvp.presenter.DrawerEditPresenter;
 import dev.velaron.fennec.mvp.view.IDrawerEditView;
 import dev.velaron.fennec.util.Objects;
-import biz.dealnote.mvp.compat.AbsMvpFragment;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.compat.AbsMvpFragment;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 public class DrawerEditFragment extends AbsMvpFragment<DrawerEditPresenter, IDrawerEditView> implements IDrawerEditView {
 

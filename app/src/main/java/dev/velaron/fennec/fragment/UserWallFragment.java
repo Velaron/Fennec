@@ -46,7 +46,7 @@ import dev.velaron.fennec.util.InputTextDialog;
 import dev.velaron.fennec.util.RoundTransformation;
 import dev.velaron.fennec.util.ViewUtils;
 import dev.velaron.fennec.view.OnlineView;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 import static dev.velaron.fennec.util.Objects.isNull;
 import static dev.velaron.fennec.util.Objects.nonNull;

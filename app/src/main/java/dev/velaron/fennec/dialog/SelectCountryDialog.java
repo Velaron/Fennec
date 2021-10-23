@@ -24,7 +24,7 @@ import dev.velaron.fennec.listener.TextWatcherAdapter;
 import dev.velaron.fennec.model.database.Country;
 import dev.velaron.fennec.mvp.presenter.CountriesPresenter;
 import dev.velaron.fennec.mvp.view.ICountriesView;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 import static dev.velaron.fennec.util.Objects.nonNull;
 

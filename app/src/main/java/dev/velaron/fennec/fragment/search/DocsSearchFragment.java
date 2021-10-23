@@ -14,7 +14,7 @@ import dev.velaron.fennec.fragment.search.criteria.DocumentSearchCriteria;
 import dev.velaron.fennec.model.Document;
 import dev.velaron.fennec.mvp.presenter.search.DocsSearchPresenter;
 import dev.velaron.fennec.mvp.view.search.IDocSearchView;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 public class DocsSearchFragment extends AbsSearchFragment<DocsSearchPresenter, IDocSearchView, Document>
         implements DocsAdapter.ActionListener, IDocSearchView {

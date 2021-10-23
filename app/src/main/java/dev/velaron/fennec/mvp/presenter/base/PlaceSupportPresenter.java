@@ -7,7 +7,7 @@ import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 
-import biz.dealnote.mvp.core.IMvpView;
+import dev.velaron.fennec.mvp.core.IMvpView;
 import dev.velaron.fennec.domain.ILikesInteractor;
 import dev.velaron.fennec.fragment.search.SearchContentType;
 import dev.velaron.fennec.fragment.search.criteria.NewsFeedCriteria;

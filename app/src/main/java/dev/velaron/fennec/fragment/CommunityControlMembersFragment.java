@@ -7,7 +7,7 @@ import dev.velaron.fennec.Extra;
 import dev.velaron.fennec.fragment.base.BaseMvpFragment;
 import dev.velaron.fennec.mvp.presenter.CommunityMembersPresenter;
 import dev.velaron.fennec.mvp.view.ICommunityMembersView;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 /**
  * Created by admin on 13.06.2017.

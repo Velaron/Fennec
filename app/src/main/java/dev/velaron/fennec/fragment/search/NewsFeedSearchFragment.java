@@ -16,7 +16,7 @@ import dev.velaron.fennec.model.Post;
 import dev.velaron.fennec.mvp.presenter.search.NewsFeedSearchPresenter;
 import dev.velaron.fennec.mvp.view.search.INewsFeedSearchView;
 import dev.velaron.fennec.util.Utils;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 public class NewsFeedSearchFragment extends AbsSearchFragment<NewsFeedSearchPresenter, INewsFeedSearchView, Post>
         implements WallAdapter.ClickListener, INewsFeedSearchView {

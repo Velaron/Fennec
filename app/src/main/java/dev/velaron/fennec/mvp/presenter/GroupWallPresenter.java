@@ -13,7 +13,7 @@ import androidx.annotation.StringRes;
 import java.util.ArrayList;
 import java.util.List;
 
-import biz.dealnote.mvp.reflect.OnGuiCreated;
+import dev.velaron.fennec.mvp.reflect.OnGuiCreated;
 import dev.velaron.fennec.Injection;
 import dev.velaron.fennec.R;
 import dev.velaron.fennec.api.Apis;

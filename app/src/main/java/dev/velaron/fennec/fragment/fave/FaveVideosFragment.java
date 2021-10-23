@@ -26,7 +26,7 @@ import dev.velaron.fennec.mvp.presenter.FaveVideosPresenter;
 import dev.velaron.fennec.mvp.view.IFaveVideosView;
 import dev.velaron.fennec.place.PlaceFactory;
 import dev.velaron.fennec.util.ViewUtils;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 import static dev.velaron.fennec.util.Objects.nonNull;
 

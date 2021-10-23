@@ -27,7 +27,7 @@ import dev.velaron.fennec.mvp.presenter.FaveLinksPresenter;
 import dev.velaron.fennec.mvp.view.IFaveLinksView;
 import dev.velaron.fennec.util.Objects;
 import dev.velaron.fennec.util.ViewUtils;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 public class FaveLinksFragment extends BaseMvpFragment<FaveLinksPresenter, IFaveLinksView> implements IFaveLinksView, FaveLinksAdapter.ClickListener {
 

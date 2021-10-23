@@ -8,7 +8,7 @@ import androidx.annotation.Nullable;
 import java.util.HashSet;
 import java.util.Set;
 
-import biz.dealnote.mvp.reflect.OnGuiCreated;
+import dev.velaron.fennec.mvp.reflect.OnGuiCreated;
 import dev.velaron.fennec.R;
 import dev.velaron.fennec.domain.IPollInteractor;
 import dev.velaron.fennec.domain.InteractorFactory;

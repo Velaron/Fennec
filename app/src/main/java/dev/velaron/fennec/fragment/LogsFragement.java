@@ -30,7 +30,7 @@ import dev.velaron.fennec.model.LogEventWrapper;
 import dev.velaron.fennec.mvp.presenter.LogsPresenter;
 import dev.velaron.fennec.mvp.view.ILogsView;
 import dev.velaron.fennec.util.Utils;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 import static dev.velaron.fennec.util.Objects.nonNull;
 

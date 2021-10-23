@@ -1,10 +1,10 @@
-package biz.dealnote.mvp.compat
+package dev.velaron.fennec.mvp.compat
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 
-import biz.dealnote.mvp.core.IMvpView
-import biz.dealnote.mvp.core.IPresenter
+import dev.velaron.fennec.mvp.core.IMvpView
+import dev.velaron.fennec.mvp.core.IPresenter
 
 /**
  * Created by ruslan.kolbasa on 08.09.2016.

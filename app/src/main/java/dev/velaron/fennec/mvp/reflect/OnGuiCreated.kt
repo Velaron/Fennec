@@ -1,4 +1,4 @@
-package biz.dealnote.mvp.reflect
+package dev.velaron.fennec.mvp.reflect
 
 /**
  * Created by ruslan.kolbasa on 05.10.2016.

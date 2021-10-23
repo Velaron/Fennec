@@ -51,7 +51,7 @@ import dev.velaron.fennec.mvp.view.IGroupWallView;
 import dev.velaron.fennec.place.PlaceFactory;
 import dev.velaron.fennec.util.AssertUtils;
 import dev.velaron.fennec.util.RoundTransformation;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 import static dev.velaron.fennec.util.Objects.isNull;
 import static dev.velaron.fennec.util.Objects.nonNull;

@@ -15,7 +15,7 @@ import dev.velaron.fennec.model.Owner;
 import dev.velaron.fennec.mvp.presenter.search.CommunitiesSearchPresenter;
 import dev.velaron.fennec.mvp.view.search.ICommunitiesSearchView;
 import dev.velaron.fennec.place.PlaceFactory;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 public class GroupsSearchFragment extends AbsSearchFragment<CommunitiesSearchPresenter, ICommunitiesSearchView, Community>
         implements ICommunitiesSearchView, PeopleAdapter.ClickListener {

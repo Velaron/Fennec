@@ -14,7 +14,7 @@ import dev.velaron.fennec.adapter.VideosAdapter;
 import dev.velaron.fennec.model.Video;
 import dev.velaron.fennec.mvp.presenter.history.ChatAttachmentVideoPresenter;
 import dev.velaron.fennec.mvp.view.IChatAttachmentVideoView;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 public class ConversationVideosFragment extends AbsChatAttachmentsFragment<Video, ChatAttachmentVideoPresenter, IChatAttachmentVideoView>
         implements VideosAdapter.VideoOnClickListener, IChatAttachmentVideoView {

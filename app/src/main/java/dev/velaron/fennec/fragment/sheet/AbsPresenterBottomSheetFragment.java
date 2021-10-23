@@ -7,9 +7,9 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import biz.dealnote.mvp.compat.ViewHostDelegate;
-import biz.dealnote.mvp.core.IMvpView;
-import biz.dealnote.mvp.core.IPresenter;
+import dev.velaron.fennec.mvp.compat.ViewHostDelegate;
+import dev.velaron.fennec.mvp.core.IMvpView;
+import dev.velaron.fennec.mvp.core.IPresenter;
 
 /**
  * Created by admin on 14.04.2017.

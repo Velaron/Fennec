@@ -57,7 +57,7 @@ import dev.velaron.fennec.view.CommentsInputViewController;
 import dev.velaron.fennec.view.LoadMoreFooterHelper;
 import dev.velaron.fennec.view.emoji.EmojiconTextView;
 import dev.velaron.fennec.view.emoji.StickersGridView;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 import static dev.velaron.fennec.util.Objects.isNull;
 import static dev.velaron.fennec.util.Objects.nonNull;

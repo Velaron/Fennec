@@ -46,7 +46,7 @@ import dev.velaron.fennec.util.AppTextUtils;
 import dev.velaron.fennec.util.ViewUtils;
 import dev.velaron.fennec.view.CircleCounterButton;
 import dev.velaron.fennec.view.emoji.EmojiconTextView;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 import static dev.velaron.fennec.util.Objects.isNull;
 import static dev.velaron.fennec.util.Objects.nonNull;

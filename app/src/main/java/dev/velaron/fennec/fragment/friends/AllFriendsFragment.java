@@ -31,7 +31,7 @@ import dev.velaron.fennec.mvp.view.IAllFriendsView;
 import dev.velaron.fennec.place.PlaceFactory;
 import dev.velaron.fennec.util.ViewUtils;
 import dev.velaron.fennec.view.MySearchView;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 import static dev.velaron.fennec.util.Objects.nonNull;
 

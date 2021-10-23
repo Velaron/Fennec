@@ -37,7 +37,7 @@ import dev.velaron.fennec.mvp.presenter.MessageAttachmentsPresenter;
 import dev.velaron.fennec.mvp.view.IMessageAttachmentsView;
 import dev.velaron.fennec.upload.Upload;
 import dev.velaron.fennec.util.Utils;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 import static dev.velaron.fennec.util.Objects.nonNull;
 

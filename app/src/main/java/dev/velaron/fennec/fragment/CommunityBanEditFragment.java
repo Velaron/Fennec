@@ -45,7 +45,7 @@ import dev.velaron.fennec.util.Utils;
 import dev.velaron.fennec.util.ViewUtils;
 import dev.velaron.fennec.view.MySpinnerView;
 import dev.velaron.fennec.view.OnlineView;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 /**
  * Created by admin on 17.06.2017.

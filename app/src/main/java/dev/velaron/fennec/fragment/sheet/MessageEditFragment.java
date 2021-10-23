@@ -39,7 +39,7 @@ import dev.velaron.fennec.mvp.view.IMessageEditView;
 import dev.velaron.fennec.upload.Upload;
 import dev.velaron.fennec.util.AssertUtils;
 import dev.velaron.fennec.util.Utils;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 import static dev.velaron.fennec.util.Objects.nonNull;
 

@@ -5,7 +5,7 @@ import androidx.annotation.StringRes;
 
 import java.util.List;
 
-import biz.dealnote.mvp.core.IMvpView;
+import dev.velaron.fennec.mvp.core.IMvpView;
 import dev.velaron.fennec.model.Dialog;
 import dev.velaron.fennec.model.Owner;
 import dev.velaron.fennec.model.User;

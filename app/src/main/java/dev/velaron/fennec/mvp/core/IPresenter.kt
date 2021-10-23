@@ -1,4 +1,4 @@
-package biz.dealnote.mvp.core
+package dev.velaron.fennec.mvp.core
 
 import android.os.Bundle
 

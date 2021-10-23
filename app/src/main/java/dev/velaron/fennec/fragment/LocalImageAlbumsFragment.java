@@ -28,7 +28,7 @@ import dev.velaron.fennec.mvp.view.ILocalPhotoAlbumsView;
 import dev.velaron.fennec.place.PlaceFactory;
 import dev.velaron.fennec.util.Objects;
 import dev.velaron.fennec.util.ViewUtils;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 public class LocalImageAlbumsFragment extends BaseMvpFragment<LocalPhotoAlbumsPresenter, ILocalPhotoAlbumsView>
         implements LocalPhotoAlbumsAdapter.ClickListener, SwipeRefreshLayout.OnRefreshListener, ILocalPhotoAlbumsView {

@@ -32,7 +32,7 @@ import dev.velaron.fennec.mvp.presenter.FriendsTabsPresenter;
 import dev.velaron.fennec.mvp.view.IFriendsTabsView;
 import dev.velaron.fennec.place.Place;
 import dev.velaron.fennec.settings.Settings;
-import biz.dealnote.mvp.core.IPresenterFactory;
+import dev.velaron.fennec.mvp.core.IPresenterFactory;
 
 public class FriendsTabsFragment extends BaseMvpFragment<FriendsTabsPresenter, IFriendsTabsView> implements IFriendsTabsView {
 

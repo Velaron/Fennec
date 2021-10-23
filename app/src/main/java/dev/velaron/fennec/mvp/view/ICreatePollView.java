@@ -3,7 +3,7 @@ package dev.velaron.fennec.mvp.view;
 import androidx.annotation.NonNull;
 import androidx.annotation.StringRes;
 
-import biz.dealnote.mvp.core.IMvpView;
+import dev.velaron.fennec.mvp.core.IMvpView;
 import dev.velaron.fennec.model.Poll;
 import dev.velaron.fennec.mvp.view.base.IAccountDependencyView;
 

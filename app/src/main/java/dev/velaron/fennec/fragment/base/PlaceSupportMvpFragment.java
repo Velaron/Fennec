@@ -36,7 +36,7 @@ import dev.velaron.fennec.place.PlaceFactory;
 import dev.velaron.fennec.player.MusicPlaybackService;
 import dev.velaron.fennec.util.AssertUtils;
 import dev.velaron.fennec.util.Utils;
-import biz.dealnote.mvp.core.IMvpView;
+import dev.velaron.fennec.mvp.core.IMvpView;
 
 /**
  * Created by ruslan.kolbasa on 04.10.2016.

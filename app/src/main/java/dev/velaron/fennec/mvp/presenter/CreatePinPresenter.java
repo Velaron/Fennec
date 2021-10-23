@@ -3,7 +3,7 @@ package dev.velaron.fennec.mvp.presenter;
 import android.os.Bundle;
 import android.os.Handler;
 
-import biz.dealnote.mvp.reflect.OnGuiCreated;
+import dev.velaron.fennec.mvp.reflect.OnGuiCreated;
 import dev.velaron.fennec.Constants;
 import dev.velaron.fennec.R;
 import dev.velaron.fennec.mvp.presenter.base.RxSupportPresenter;
