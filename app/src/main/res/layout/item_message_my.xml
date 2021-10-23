@@ -20,7 +20,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginEnd="2dp" />
 
-    <biz.dealnote.messenger.view.OnlineView
+    <dev.velaron.fennec.view.OnlineView
         android:id="@+id/item_message_important"
         android:layout_width="@dimen/online_dot_size"
         android:layout_height="@dimen/online_dot_size"
@@ -31,7 +31,7 @@
         app:circle_color="?icon_color_active"
         app:stroke_color="?android:colorBackground" />
 
-    <biz.dealnote.messenger.view.BubbleLinearLayout
+    <dev.velaron.fennec.view.BubbleLinearLayout
         android:id="@+id/item_message_bubble"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
         app:arrowWidth="8dp"
         app:bubbleColor="?message_bubble_color">
 
-        <biz.dealnote.messenger.view.emoji.EmojiconTextView
+        <dev.velaron.fennec.view.emoji.EmojiconTextView
             android:id="@+id/item_message_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -100,7 +100,7 @@
                 android:tint="?android:textColorSecondary" />
         </LinearLayout>
 
-    </biz.dealnote.messenger.view.BubbleLinearLayout>
+    </dev.velaron.fennec.view.BubbleLinearLayout>
 
 
 </RelativeLayout>

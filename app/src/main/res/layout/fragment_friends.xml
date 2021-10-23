@@ -11,7 +11,7 @@
         android:background="?android:colorBackground"
         app:elevation="0dp">
 
-        <biz.dealnote.messenger.view.MySearchView
+        <dev.velaron.fennec.view.MySearchView
             android:id="@+id/searchview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

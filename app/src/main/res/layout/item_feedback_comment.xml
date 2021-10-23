@@ -60,7 +60,7 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true" />
 
-                <biz.dealnote.messenger.view.OnlineView
+                <dev.velaron.fennec.view.OnlineView
                     android:id="@+id/item_circle_changable"
                     android:layout_width="@dimen/online_dot_size"
                     android:layout_height="@dimen/online_dot_size"
@@ -101,7 +101,7 @@
                     android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
                     tools:text="Name" />
 
-                <biz.dealnote.messenger.view.emoji.EmojiconTextView
+                <dev.velaron.fennec.view.emoji.EmojiconTextView
                     android:id="@+id/item_comment_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -159,7 +159,7 @@
                 android:layout_marginStart="2dp"
                 android:layout_marginTop="2dp" />
 
-            <biz.dealnote.messenger.view.OnlineView
+            <dev.velaron.fennec.view.OnlineView
                 android:id="@+id/item_circle_reply"
                 android:layout_width="16dp"
                 android:layout_height="16dp"
@@ -188,7 +188,7 @@
                     android:textIsSelectable="false"
                     tools:text="Name" />
 
-                <biz.dealnote.messenger.view.emoji.EmojiconTextView xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+                <dev.velaron.fennec.view.emoji.EmojiconTextView xmlns:emojicon="http://schemas.android.com/apk/res-auto"
                     android:id="@+id/item_comment_reply_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

@@ -6,7 +6,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <biz.dealnote.messenger.view.mozaik.MozaikLayout
+        <dev.velaron.fennec.view.mozaik.MozaikLayout
             android:id="@+id/comments_photo_attachments"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />

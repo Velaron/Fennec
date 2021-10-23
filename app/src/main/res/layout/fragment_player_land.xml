@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <biz.dealnote.messenger.view.CenteredToolbar
+    <dev.velaron.fennec.view.CenteredToolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="48dp"
@@ -30,7 +30,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbar">
 
-        <biz.dealnote.messenger.view.AspectRatioImageView
+        <dev.velaron.fennec.view.AspectRatioImageView
             android:id="@+id/cover"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -97,7 +97,7 @@
             android:padding="8dp"
             app:layout_constraintBottom_toTopOf="@id/audio_player_controls">
 
-            <biz.dealnote.messenger.view.CircleCounterButton
+            <dev.velaron.fennec.view.CircleCounterButton
                 android:id="@+id/audio_add"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
@@ -144,7 +144,7 @@
 
             </LinearLayout>
 
-            <biz.dealnote.messenger.view.CircleCounterButton
+            <dev.velaron.fennec.view.CircleCounterButton
                 android:id="@+id/audio_share"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
@@ -171,7 +171,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1">
 
-                <biz.dealnote.messenger.player.ui.ShuffleButton
+                <dev.velaron.fennec.player.ui.ShuffleButton
                     android:id="@+id/action_button_shuffle"
                     style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                     android:layout_width="@dimen/audio_player_controls_end_button_width"
@@ -187,7 +187,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1">
 
-                <biz.dealnote.messenger.player.ui.RepeatingImageButton
+                <dev.velaron.fennec.player.ui.RepeatingImageButton
                     android:id="@+id/action_button_previous"
                     style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                     android:layout_width="@dimen/audio_player_controls_main_button_width"
@@ -203,7 +203,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1">
 
-                <biz.dealnote.messenger.player.ui.PlayPauseButton
+                <dev.velaron.fennec.player.ui.PlayPauseButton
                     android:id="@+id/action_button_play"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -219,7 +219,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1">
 
-                <biz.dealnote.messenger.player.ui.RepeatingImageButton
+                <dev.velaron.fennec.player.ui.RepeatingImageButton
                     android:id="@+id/action_button_next"
                     style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                     android:layout_width="@dimen/audio_player_controls_main_button_width"
@@ -235,7 +235,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1">
 
-                <biz.dealnote.messenger.player.ui.RepeatButton
+                <dev.velaron.fennec.player.ui.RepeatButton
                     android:id="@+id/action_button_repeat"
                     style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                     android:layout_width="@dimen/audio_player_controls_end_button_width"

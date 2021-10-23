@@ -117,7 +117,7 @@
             android:paddingEnd="4dp"
             android:paddingBottom="8dp">
 
-            <biz.dealnote.messenger.view.ColorFilterImageView
+            <dev.velaron.fennec.view.ColorFilterImageView
                 android:id="@+id/iconEdit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

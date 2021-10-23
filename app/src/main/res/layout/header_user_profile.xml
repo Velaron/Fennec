@@ -38,7 +38,7 @@
                         android:background="@drawable/sel_button_round_5_white"
                         android:padding="1.5dp" />
 
-                    <biz.dealnote.messenger.view.OnlineView
+                    <dev.velaron.fennec.view.OnlineView
                         android:id="@+id/header_navi_menu_online"
                         android:layout_width="@dimen/online_dot_size_big"
                         android:layout_height="@dimen/online_dot_size_big"
@@ -86,7 +86,7 @@
                         android:gravity="end"
                         android:textSize="@dimen/font_size_subtitle" />
 
-                    <biz.dealnote.messenger.view.emoji.EmojiconTextView
+                    <dev.velaron.fennec.view.emoji.EmojiconTextView
                         android:id="@+id/fragment_user_profile_status"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

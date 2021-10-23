@@ -49,7 +49,7 @@
 
         android:layout_margin="@dimen/fab_margin"
         android:src="@drawable/plus"
-        app:layout_behavior="biz.dealnote.messenger.view.FABBehavior" />
+        app:layout_behavior="dev.velaron.fennec.view.FABBehavior" />
 
 </RelativeLayout>
 

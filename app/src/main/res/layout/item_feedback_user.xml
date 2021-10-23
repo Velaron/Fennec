@@ -55,7 +55,7 @@
                 android:layout_centerInParent="true"
                 android:layout_centerVertical="true" />
 
-            <biz.dealnote.messenger.view.OnlineView
+            <dev.velaron.fennec.view.OnlineView
                 android:id="@+id/item_circle_friend_changable"
                 android:layout_width="@dimen/online_dot_size"
                 android:layout_height="@dimen/online_dot_size"

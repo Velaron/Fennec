@@ -17,7 +17,7 @@
         android:layout_below="@id/toolbar_container"
         android:scrollbars="vertical" />
 
-    <biz.dealnote.messenger.view.ProgressButton
+    <dev.velaron.fennec.view.ProgressButton
         android:id="@+id/vote"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

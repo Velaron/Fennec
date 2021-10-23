@@ -8,7 +8,7 @@
     android:gravity="center"
     android:orientation="horizontal">
 
-    <biz.dealnote.messenger.view.YoutubeButton
+    <dev.velaron.fennec.view.YoutubeButton
         android:id="@+id/fragment_create_post_photo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,7 +18,7 @@
         app:youtube_button_text="@string/photo"
         app:youtube_button_text_color="?attr/colorOnSurface" />
 
-    <biz.dealnote.messenger.view.YoutubeButton
+    <dev.velaron.fennec.view.YoutubeButton
         android:id="@+id/fragment_create_post_audio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
         app:youtube_button_text="@string/music"
         app:youtube_button_text_color="?attr/colorOnSurface" />
 
-    <biz.dealnote.messenger.view.YoutubeButton
+    <dev.velaron.fennec.view.YoutubeButton
         android:id="@+id/fragment_create_post_video"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
         app:youtube_button_text="@string/video"
         app:youtube_button_text_color="?attr/colorOnSurface" />
 
-    <biz.dealnote.messenger.view.YoutubeButton
+    <dev.velaron.fennec.view.YoutubeButton
         android:id="@+id/fragment_create_post_doc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
         app:youtube_button_text="@string/document_short"
         app:youtube_button_text_color="?attr/colorOnSurface" />
 
-    <biz.dealnote.messenger.view.YoutubeButton
+    <dev.velaron.fennec.view.YoutubeButton
         android:id="@+id/fragment_create_post_poll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
         app:youtube_button_text="@string/poll"
         app:youtube_button_text_color="?attr/colorOnSurface" />
 
-    <!-- <biz.dealnote.messenger.view.YoutubeButton
+    <!-- <dev.velaron.fennec.messenger.view.YoutubeButton
          android:id="@+id/fragment_create_post_timer"
          android:background="?attr/selectableItemBackgroundBorderless"
          app:youtube_button_icon="@drawable/clock"

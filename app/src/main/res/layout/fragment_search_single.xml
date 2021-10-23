@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <biz.dealnote.messenger.view.MySearchView
+    <dev.velaron.fennec.view.MySearchView
         android:id="@+id/searchview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

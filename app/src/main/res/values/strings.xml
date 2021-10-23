@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="app_name">Phoenix (R)</string>
+    <string name="app_name">Fennec</string>
 
     <!-- Dialogs-->
     <string name="dialogs">Conversations</string>
@@ -296,7 +296,7 @@
 
     <string name="community">Community</string>
 
-    <!-- После добавления ошибок в этот список обязательно добавить их обработку в класс biz.dealnote.messenger.service.operations.ApiExceptionAttrs !!!!!!-->
+    <!-- После добавления ошибок в этот список обязательно добавить их обработку в класс dev.velaron.fennec.messenger.service.operations.ApiExceptionAttrs !!!!!!-->
     <string name="api_error_1">Unknown error occurred</string>
     <string name="api_error_2">Application is disabled. Enable your application or use test mode</string>
     <string name="api_error_3">Unknown method passed</string>
@@ -1209,5 +1209,4 @@
     <string name="chat">Chat</string>
 
     <string name="pages">Pages</string>
-
 </resources>

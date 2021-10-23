@@ -65,7 +65,7 @@
 
         </LinearLayout>
 
-        <biz.dealnote.messenger.view.emoji.EmojiconEditText
+        <dev.velaron.fennec.view.emoji.EmojiconEditText
             android:id="@+id/fragment_create_post_text"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -87,7 +87,7 @@
 
     </LinearLayout>
 
-    <biz.dealnote.messenger.view.SawView
+    <dev.velaron.fennec.view.SawView
         android:layout_width="match_parent"
         android:layout_height="8dp"
         app:sawBackground="?android:windowBackground"

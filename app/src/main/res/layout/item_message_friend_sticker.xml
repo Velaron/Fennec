@@ -17,7 +17,7 @@
         android:layout_height="@dimen/avatar_size_small"
         android:layout_marginStart="4dp" />
 
-    <biz.dealnote.messenger.view.OnlineView
+    <dev.velaron.fennec.view.OnlineView
         android:id="@+id/item_message_important"
         android:layout_width="@dimen/online_dot_size"
         android:layout_height="@dimen/online_dot_size"

@@ -25,7 +25,7 @@
             android:text="@string/community_options_category_title"
             android:textColor="?android:textColorSecondary" />
 
-        <biz.dealnote.messenger.view.MySpinnerView
+        <dev.velaron.fennec.view.MySpinnerView
             android:id="@+id/spinner_category"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
             android:text="@string/community_options_community_subject_title"
             android:textColor="?android:textColorSecondary" />
 
-        <biz.dealnote.messenger.view.MySpinnerView
+        <dev.velaron.fennec.view.MySpinnerView
             android:id="@+id/subject_0"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
             app:spinner_icon_color="?attr/colorAccent"
             app:spinner_text_color="?android:textColorPrimary" />
 
-        <biz.dealnote.messenger.view.MySpinnerView
+        <dev.velaron.fennec.view.MySpinnerView
             android:id="@+id/subject_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

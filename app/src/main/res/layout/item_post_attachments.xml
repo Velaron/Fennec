@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <biz.dealnote.messenger.view.AspectRatioImageView
+            <dev.velaron.fennec.view.AspectRatioImageView
                 android:id="@+id/item_attachment_image"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -53,7 +53,7 @@
                     android:scaleType="centerCrop"
                     android:src="@drawable/close" />
 
-                <biz.dealnote.messenger.view.CircleRoadProgress
+                <dev.velaron.fennec.view.CircleRoadProgress
                     android:id="@+id/item_attachment_progress"
                     android:layout_width="56dp"
                     android:layout_height="56dp"

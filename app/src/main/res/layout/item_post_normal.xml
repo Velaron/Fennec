@@ -56,7 +56,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <biz.dealnote.messenger.view.CircleCounterButton
+            <dev.velaron.fennec.view.CircleCounterButton
                 android:id="@+id/share_button"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -68,7 +68,7 @@
                 app:button_icon="@drawable/share_variant"
                 app:noactive_icon_color="?attr/colorOnSurface" />
 
-            <biz.dealnote.messenger.view.CircleCounterButton
+            <dev.velaron.fennec.view.CircleCounterButton
                 android:id="@+id/comments_button"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -81,7 +81,7 @@
                 app:button_icon="@drawable/comment"
                 app:noactive_icon_color="?attr/colorOnSurface" />
 
-            <biz.dealnote.messenger.view.CircleCounterButton
+            <dev.velaron.fennec.view.CircleCounterButton
                 android:id="@+id/like_button"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

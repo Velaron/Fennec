@@ -36,7 +36,7 @@
                     android:scaleType="centerCrop"
                     android:src="@drawable/close" />
 
-                <biz.dealnote.messenger.view.CircleRoadProgress
+                <dev.velaron.fennec.view.CircleRoadProgress
                     android:id="@+id/progress_view"
                     android:layout_width="56dp"
                     android:layout_height="56dp"
