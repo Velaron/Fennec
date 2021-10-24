@@ -101,6 +101,16 @@ class OtherSettings implements ISettings.IOtherSettings {
     }
 
     @Override
+    public String getOauthDomain() {
+        return PreferenceManager.getDefaultSharedPreferences(app).getString("oauth_domain", "https://vk-oauth-proxy.xtrafrancyz.net/");
+    }
+
+    @Override
+    public String getApiDomain() {
+        return PreferenceManager.getDefaultSharedPreferences(app).getString("api_domain", "https://vk-api-proxy.xtrafrancyz.net/method/");
+    }
+
+    @Override
     public boolean isKeepLongpoll() {
         return PreferenceManager.getDefaultSharedPreferences(app).getBoolean("keep_longpoll", false);
     }

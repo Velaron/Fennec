@@ -12,6 +12,7 @@ import dev.velaron.fennec.api.adapters.LongpollUpdatesAdapter;
 import dev.velaron.fennec.api.model.longpoll.AbsLongpollEvent;
 import dev.velaron.fennec.api.model.longpoll.VkApiLongpollUpdates;
 import dev.velaron.fennec.settings.IProxySettings;
+import dev.velaron.fennec.settings.Settings;
 import dev.velaron.fennec.util.Objects;
 import io.reactivex.Single;
 import okhttp3.OkHttpClient;
@@ -54,7 +55,7 @@ public class OtherVkRetrofitProvider implements IOtherVkRetrofitProvider {
             Gson gson = new GsonBuilder().create();
 
             final Retrofit retrofit = new Retrofit.Builder()
-                    .baseUrl("https://oauth.vk.com/")
+                    .baseUrl(Settings.get().other().getOauthDomain())
                     .addConverterFactory(GsonConverterFactory.create(gson))
                     .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                     .client(builder.build())
@@ -80,7 +81,7 @@ public class OtherVkRetrofitProvider implements IOtherVkRetrofitProvider {
                 .create();
 
         return new Retrofit.Builder()
-                .baseUrl("https://api.vk.com/method/") // dummy
+                .baseUrl(Settings.get().other().getApiDomain())
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .client(builder.build())

@@ -6,6 +6,7 @@ import java.util.Map;
 import dev.velaron.fennec.api.IVkRetrofitProvider;
 import dev.velaron.fennec.api.RetrofitFactory;
 import dev.velaron.fennec.api.interfaces.IOtherApi;
+import dev.velaron.fennec.settings.Settings;
 import dev.velaron.fennec.util.Objects;
 import dev.velaron.fennec.util.Optional;
 import io.reactivex.Single;
@@ -43,7 +44,7 @@ public class OtherApi implements IOtherApi {
                 .flatMap(client -> Single
                         .<Response>create(emitter -> {
                             Request request = new Request.Builder()
-                                    .url(RetrofitFactory.API_METHOD_URL + method)
+                                    .url(Settings.get().other().getApiDomain() + method)
                                     .method("POST", bodyBuilder.build())
                                     .build();
 

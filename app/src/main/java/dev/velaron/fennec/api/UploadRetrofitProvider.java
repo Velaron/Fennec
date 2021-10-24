@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 import dev.velaron.fennec.BuildConfig;
 import dev.velaron.fennec.settings.IProxySettings;
+import dev.velaron.fennec.settings.Settings;
 import dev.velaron.fennec.util.Objects;
 import io.reactivex.Single;
 import okhttp3.OkHttpClient;
@@ -80,7 +81,7 @@ public class UploadRetrofitProvider implements IUploadRetrofitProvider {
         ProxyUtil.applyProxyConfig(builder, proxySettings.getActiveProxy());
 
         return new Retrofit.Builder()
-                .baseUrl("https://api.vk.com/method/") // dummy
+                .baseUrl(Settings.get().other().getApiDomain())
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .client(builder.build())

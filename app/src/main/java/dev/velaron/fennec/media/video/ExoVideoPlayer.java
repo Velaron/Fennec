@@ -1,21 +1,18 @@
 package dev.velaron.fennec.media.video;
 
+import static dev.velaron.fennec.util.Objects.nonNull;
+
 import android.content.Context;
-import android.net.Uri;
 import android.view.SurfaceHolder;
 
-import com.google.android.exoplayer2.ExoPlayerFactory;
+import com.google.android.exoplayer2.MediaItem;
+import com.google.android.exoplayer2.Player;
 import com.google.android.exoplayer2.SimpleExoPlayer;
+import com.google.android.exoplayer2.ext.okhttp.OkHttpDataSource;
 import com.google.android.exoplayer2.extractor.DefaultExtractorsFactory;
 import com.google.android.exoplayer2.extractor.ExtractorsFactory;
-import com.google.android.exoplayer2.source.ExtractorMediaSource;
 import com.google.android.exoplayer2.source.MediaSource;
-import com.google.android.exoplayer2.trackselection.AdaptiveTrackSelection;
-import com.google.android.exoplayer2.trackselection.DefaultTrackSelector;
-import com.google.android.exoplayer2.trackselection.TrackSelection;
-import com.google.android.exoplayer2.trackselection.TrackSelector;
-import com.google.android.exoplayer2.upstream.BandwidthMeter;
-import com.google.android.exoplayer2.upstream.DefaultBandwidthMeter;
+import com.google.android.exoplayer2.source.ProgressiveMediaSource;
 import com.google.android.exoplayer2.util.Util;
 
 import java.lang.ref.WeakReference;
@@ -25,13 +22,12 @@ import java.net.Proxy;
 import java.util.ArrayList;
 import java.util.List;
 
+import dev.velaron.fennec.App;
 import dev.velaron.fennec.api.ProxyUtil;
-import dev.velaron.fennec.media.exo.CustomHttpDataSourceFactory;
 import dev.velaron.fennec.media.exo.ExoUtil;
 import dev.velaron.fennec.model.ProxyConfig;
 import dev.velaron.fennec.model.VideoSize;
-
-import static dev.velaron.fennec.util.Objects.nonNull;
+import okhttp3.OkHttpClient;
 
 /**
  * Created by Ruslan Kolbasa on 14.08.2017.
@@ -70,7 +66,7 @@ public class ExoVideoPlayer implements IVideoPlayer {
         }
 
         String userAgent = Util.getUserAgent(context.getApplicationContext(), "phoenix-video-exo-player");
-        CustomHttpDataSourceFactory factory = new CustomHttpDataSourceFactory(userAgent, proxy);
+        OkHttpDataSource.Factory factory = new OkHttpDataSource.Factory(new OkHttpClient.Builder().build()).setUserAgent(userAgent);
 
         // Produces Extractor instances for parsing the media data.
         ExtractorsFactory extractorsFactory = new DefaultExtractorsFactory();
@@ -79,15 +75,11 @@ public class ExoVideoPlayer implements IVideoPlayer {
         // FOR SD CARD SOURCE:
         // MediaSource videoSource = new ExtractorMediaSource(mp4VideoUri, dataSourceFactory, extractorsFactory, null, null);
         // FOR LIVESTREAM LINK:
-        return new ExtractorMediaSource(Uri.parse(url), factory, extractorsFactory, null, null);
+        return new ProgressiveMediaSource.Factory(factory).createMediaSource(new MediaItem.Builder().setUri(url).build());
     }
 
     private static SimpleExoPlayer createPlayer(Context context) {
-        BandwidthMeter bandwidthMeter = new DefaultBandwidthMeter();
-        TrackSelection.Factory videoTrackSelectionFactory = new AdaptiveTrackSelection.Factory(bandwidthMeter);
-        TrackSelector trackSelector = new DefaultTrackSelector(videoTrackSelectionFactory);
-
-        return ExoPlayerFactory.newSimpleInstance(context.getApplicationContext(), trackSelector);
+        return new SimpleExoPlayer.Builder(App.getInstance()).build();
     }
 
     private boolean supposedToBePlaying;
@@ -156,7 +148,7 @@ public class ExoVideoPlayer implements IVideoPlayer {
         player.setVideoSurfaceHolder(holder);
     }
 
-    private static final class OnVideoSizeChangedListener implements SimpleExoPlayer.VideoListener {
+    private static final class OnVideoSizeChangedListener implements Player.Listener {
 
         final WeakReference<ExoVideoPlayer> ref;
 
@@ -165,10 +157,10 @@ public class ExoVideoPlayer implements IVideoPlayer {
         }
 
         @Override
-        public void onVideoSizeChanged(int i, int i1, int i2, float v) {
+        public void onVideoSizeChanged(com.google.android.exoplayer2.video.VideoSize videoSize) {
             ExoVideoPlayer player = ref.get();
             if (player != null) {
-                player.onVideoSizeChanged(i, i1);
+                player.onVideoSizeChanged(videoSize.width, videoSize.height);
             }
         }
 

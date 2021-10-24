@@ -65,6 +65,7 @@ import dev.velaron.fennec.api.model.response.LikesListResponse;
 import dev.velaron.fennec.api.model.response.NewsfeedCommentsResponse;
 import dev.velaron.fennec.api.model.response.SearchDialogsResponse;
 import dev.velaron.fennec.settings.IProxySettings;
+import dev.velaron.fennec.settings.Settings;
 import io.reactivex.Single;
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
@@ -76,8 +77,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * phoenix
  */
 public class VkRetrofitProvider implements IVkRetrofitProvider {
-
-    private static final String API_METHOD_URL = "https://api.vk.com/method/";
 
     private static final Gson VKGSON = new GsonBuilder()
             .registerTypeAdapter(VkApiAttachments.Entry.class, new AttachmentsEntryDtoAdapter())
@@ -193,7 +192,7 @@ public class VkRetrofitProvider implements IVkRetrofitProvider {
 
     private RetrofitWrapper createDefaultVkApiRetrofit(OkHttpClient okHttpClient) {
         return RetrofitWrapper.wrap(new Retrofit.Builder()
-                .baseUrl(API_METHOD_URL)
+                .baseUrl(Settings.get().other().getApiDomain())
                 .addConverterFactory(GSON_CONVERTER_FACTORY)
                 .addCallAdapterFactory(RX_ADAPTER_FACTORY)
                 .client(okHttpClient)

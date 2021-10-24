@@ -1,41 +1,32 @@
 package dev.velaron.fennec.media.voice;
 
-import android.content.Context;
-import android.net.Uri;
+import static dev.velaron.fennec.util.Objects.isNull;
+import static dev.velaron.fennec.util.Objects.nonNull;
 
-import com.google.android.exoplayer2.ExoPlaybackException;
-import com.google.android.exoplayer2.ExoPlayerFactory;
+import android.content.Context;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
+import com.google.android.exoplayer2.MediaItem;
+import com.google.android.exoplayer2.PlaybackException;
 import com.google.android.exoplayer2.Player;
 import com.google.android.exoplayer2.SimpleExoPlayer;
+import com.google.android.exoplayer2.ext.okhttp.OkHttpDataSource;
 import com.google.android.exoplayer2.extractor.DefaultExtractorsFactory;
 import com.google.android.exoplayer2.extractor.ExtractorsFactory;
-import com.google.android.exoplayer2.source.ExtractorMediaSource;
 import com.google.android.exoplayer2.source.MediaSource;
-import com.google.android.exoplayer2.trackselection.AdaptiveTrackSelection;
-import com.google.android.exoplayer2.trackselection.DefaultTrackSelector;
-import com.google.android.exoplayer2.trackselection.TrackSelection;
-import com.google.android.exoplayer2.trackselection.TrackSelector;
-import com.google.android.exoplayer2.upstream.BandwidthMeter;
-import com.google.android.exoplayer2.upstream.DefaultBandwidthMeter;
+import com.google.android.exoplayer2.source.ProgressiveMediaSource;
 import com.google.android.exoplayer2.util.Util;
 
-import java.net.Authenticator;
-import java.net.PasswordAuthentication;
-import java.net.Proxy;
-
-import androidx.annotation.Nullable;
-import dev.velaron.fennec.api.ProxyUtil;
-import dev.velaron.fennec.media.exo.CustomHttpDataSourceFactory;
-import dev.velaron.fennec.media.exo.ExoEventAdapter;
+import dev.velaron.fennec.App;
 import dev.velaron.fennec.media.exo.ExoUtil;
 import dev.velaron.fennec.model.ProxyConfig;
 import dev.velaron.fennec.model.VoiceMessage;
 import dev.velaron.fennec.util.Logger;
 import dev.velaron.fennec.util.Objects;
 import dev.velaron.fennec.util.Optional;
-
-import static dev.velaron.fennec.util.Objects.isNull;
-import static dev.velaron.fennec.util.Objects.nonNull;
+import okhttp3.OkHttpClient;
 
 /**
  * Created by r.kolbasa on 28.11.2017.
@@ -87,35 +78,31 @@ public class ExoVoicePlayer implements IVoicePlayer {
     private void preparePlayer() {
         setStatus(STATUS_PREPARING);
 
-        BandwidthMeter bandwidthMeter = new DefaultBandwidthMeter();
-        TrackSelection.Factory trackSelectionFactory = new AdaptiveTrackSelection.Factory(bandwidthMeter);
-        TrackSelector trackSelector = new DefaultTrackSelector(trackSelectionFactory);
-
-        exoPlayer = ExoPlayerFactory.newSimpleInstance(app, trackSelector);
+        exoPlayer = new SimpleExoPlayer.Builder(App.getInstance()).build();
 
         // DefaultBandwidthMeter bandwidthMeterA = new DefaultBandwidthMeter();
         // Produces DataSource instances through which media data is loaded.
         // DataSource.Factory dataSourceFactory = new DefaultDataSourceFactory(this, Util.getUserAgent(this, "exoplayer2example"), bandwidthMeterA);
         // DefaultDataSourceFactory dataSourceFactory = new DefaultDataSourceFactory(App.getInstance(), Util.getUserAgent(App.getInstance(), "exoplayer2example"), bandwidthMeterA);
 
-        Proxy proxy = null;
-        if (nonNull(proxyConfig)) {
-            proxy = new Proxy(Proxy.Type.HTTP, ProxyUtil.obtainAddress(proxyConfig));
-            if (proxyConfig.isAuthEnabled()) {
-                Authenticator authenticator = new Authenticator() {
-                    public PasswordAuthentication getPasswordAuthentication() {
-                        return new PasswordAuthentication(proxyConfig.getUser(), proxyConfig.getPass().toCharArray());
-                    }
-                };
-
-                Authenticator.setDefault(authenticator);
-            } else {
-                Authenticator.setDefault(null);
-            }
-        }
+//        Proxy proxy = null;
+//        if (nonNull(proxyConfig)) {
+//            proxy = new Proxy(Proxy.Type.HTTP, ProxyUtil.obtainAddress(proxyConfig));
+//            if (proxyConfig.isAuthEnabled()) {
+//                Authenticator authenticator = new Authenticator() {
+//                    public PasswordAuthentication getPasswordAuthentication() {
+//                        return new PasswordAuthentication(proxyConfig.getUser(), proxyConfig.getPass().toCharArray());
+//                    }
+//                };
+//
+//                Authenticator.setDefault(authenticator);
+//            } else {
+//                Authenticator.setDefault(null);
+//            }
+//        }
 
         String userAgent = Util.getUserAgent(app, "Phoenix-for-VK");
-        CustomHttpDataSourceFactory factory = new CustomHttpDataSourceFactory(userAgent, proxy);
+        OkHttpDataSource.Factory factory = new OkHttpDataSource.Factory(new OkHttpClient.Builder().build()).setUserAgent(userAgent);
 
         // Produces Extractor instances for parsing the media data.
         ExtractorsFactory extractorsFactory = new DefaultExtractorsFactory();
@@ -127,25 +114,27 @@ public class ExoVoicePlayer implements IVoicePlayer {
 
         String url = playingEntry.getAudio().getLinkMp3();
 
-        MediaSource mediaSource = new ExtractorMediaSource(Uri.parse(url), factory, extractorsFactory, null, null);
+        MediaSource mediaSource = new ProgressiveMediaSource.Factory(factory).createMediaSource(new MediaItem.Builder().setUri(url).build());
         exoPlayer.setRepeatMode(Player.REPEAT_MODE_OFF);
-        exoPlayer.addListener(new ExoEventAdapter() {
+
+        exoPlayer.addListener(new Player.Listener() {
             @Override
-            public void onPlayerStateChanged(boolean b, int i) {
-                onInternalPlayerStateChanged(i);
+            public void onPlaybackStateChanged(@Player.State int playbackState) {
+                onInternalPlayerStateChanged(playbackState);
             }
 
             @Override
-            public void onPlayerError(ExoPlaybackException error) {
+            public void onPlayerError(@NonNull PlaybackException error) {
                 onExoPlayerException(error);
             }
         });
 
         exoPlayer.setPlayWhenReady(supposedToBePlaying);
-        exoPlayer.prepare(mediaSource);
+        exoPlayer.setMediaSource(mediaSource);
+        exoPlayer.prepare();
     }
 
-    private void onExoPlayerException(ExoPlaybackException e){
+    private void onExoPlayerException(PlaybackException e){
         if(nonNull(errorListener)){
             errorListener.onPlayError(new PrepareException(e));
         }

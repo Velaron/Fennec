@@ -66,6 +66,10 @@ public interface ISettings {
         boolean isCommentsDesc();
 
         boolean toggleCommentsDirection();
+
+        String getOauthDomain();
+
+        String getApiDomain();
     }
 
     interface IAccountsSettings {

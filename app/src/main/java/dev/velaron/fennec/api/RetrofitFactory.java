@@ -13,8 +13,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 public class RetrofitFactory {
 
-    public static final String API_METHOD_URL = "https://api.vk.com/method/";
-
     private static final RxJava2CallAdapterFactory RX_ADAPTER_FACTORY = RxJava2CallAdapterFactory.create();
 
     private static final GsonConverterFactory SIMPLE_GSON_CONVERTER_FACTORY

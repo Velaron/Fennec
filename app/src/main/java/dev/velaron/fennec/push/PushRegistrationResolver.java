@@ -3,8 +3,7 @@ package dev.velaron.fennec.push;
 import static dev.velaron.fennec.util.Utils.getCauseIfRuntime;
 
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.firebase.iid.FirebaseInstanceId;
-import com.google.firebase.iid.InstanceIdResult;
+import com.google.firebase.installations.FirebaseInstallations;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -47,16 +46,15 @@ public class PushRegistrationResolver implements IPushRegistrationResolver {
 
     private static Single<String> getFcmToken() {
         return Single.create(emitter -> {
-            OnCompleteListener<InstanceIdResult> listener = task -> {
+            OnCompleteListener<String> listener = task -> {
                 if (task.isSuccessful()) {
-                    InstanceIdResult result = task.getResult();
-                    emitter.onSuccess(result.getToken());
+                    emitter.onSuccess(task.getResult());
                 } else {
                     emitter.tryOnError(task.getException());
                 }
             };
 
-            FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(listener);
+            FirebaseInstallations.getInstance().getId().addOnCompleteListener(listener);
         });
     }
 
