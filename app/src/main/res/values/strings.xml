@@ -764,7 +764,7 @@
     <string name="subscriptions">Subscriptions</string>
     <string name="album_cover">Album cover</string>
     <string name="cancelling">Cancelling</string>
-    <string name="account_manager">Account manager</string>
+    <string name="account_manager">Account Manager</string>
     <string name="accounts">Accounts</string>
     <string name="set_as_active">Set as active</string>
     <string name="peer_notification_settings">Notification settings</string>
@@ -925,7 +925,7 @@
     <string name="go_to_photo">Go to photo</string>
     <string name="go_to_video">Go to video</string>
     <string name="upload_not_resolved_exception_message">Uploading is not completed or interrupted</string>
-    <string name="privacy_policy">Privacy policy</string>
+    <string name="privacy_policy">Privacy Policy</string>
     <string name="copy_text">Copy text</string>
     <string name="copied_text">Text is copied</string>
     <string name="in_a_civil_union">In a civil union</string>

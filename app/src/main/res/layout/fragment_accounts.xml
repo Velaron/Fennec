@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -10,14 +11,11 @@
 
         <LinearLayout
             android:id="@+id/header"
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <include layout="@layout/toolbar" />
-
-            <include
-                layout="@layout/header_accounts"/>
 
         </LinearLayout>
 
@@ -31,24 +29,16 @@
                 android:layout_height="match_parent"
                 android:overScrollMode="never" />
 
-            <TextView
-                android:id="@+id/empty"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:padding="32dp"
-                android:text="@string/welcome_hint"
-                android:textSize="14sp" />
-
         </RelativeLayout>
     </LinearLayout>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center_horizontal"
         android:layout_margin="@dimen/fab_margin"
-        android:src="@drawable/online_phoenix" />
+        android:text="@string/action_add"
+        app:icon="@drawable/plus" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

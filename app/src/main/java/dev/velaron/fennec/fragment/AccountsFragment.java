@@ -15,21 +15,20 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import java.io.IOException;
 import java.util.ArrayList;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 import dev.velaron.fennec.Constants;
 import dev.velaron.fennec.Extra;
 import dev.velaron.fennec.R;
-import dev.velaron.fennec.activity.ActivityUtils;
 import dev.velaron.fennec.activity.LoginActivity;
 import dev.velaron.fennec.activity.ProxyManagerActivity;
 import dev.velaron.fennec.adapter.AccountAdapter;
@@ -111,7 +110,7 @@ public class AccountsFragment extends BaseFragment implements View.OnClickListen
         if (!isAdded() || empty == null) return;
         empty.setVisibility(Utils.safeIsEmpty(mData) ? View.VISIBLE : View.INVISIBLE);
     }
-
+/*
     @Override
     public void onResume() {
         super.onResume();
@@ -121,7 +120,7 @@ public class AccountsFragment extends BaseFragment implements View.OnClickListen
             actionBar.setSubtitle(null);
         }
     }
-
+*/
     private static final String SAVE_DATA = "save_data";
 
     @Override
